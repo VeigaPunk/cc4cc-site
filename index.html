@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CC4CC — Superfócito card</title>
+  <meta name="description" content="AI-native card. One $UPAFAGOCITO on board. Full stack access. The cell stays closed." />
+  <style>
+    :root { color-scheme: dark; --bg:#07090c; --fg:#e8eef5; --mut:#8b9bb0; --acc:#5eead4; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, sans-serif; background:var(--bg); color:var(--fg);
+      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem; }
+    main { max-width:36rem; }
+    h1 { font-size:2.4rem; letter-spacing:-0.03em; margin:0 0 .5rem; }
+    .tag { color:var(--acc); font-weight:600; font-size:.85rem; text-transform:uppercase; letter-spacing:.12em; }
+    p { color:var(--mut); line-height:1.55; }
+    .gift { border:1px solid #1f2a36; border-radius:12px; padding:1rem 1.2rem; margin:1.5rem 0; background:#0c1118; }
+    .gift strong { color:var(--fg); }
+    form { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:1.25rem; }
+    input { flex:1; min-width:12rem; padding:.75rem 1rem; border-radius:8px; border:1px solid #243041; background:#0c1118; color:var(--fg); }
+    button { padding:.75rem 1.1rem; border:0; border-radius:8px; background:var(--acc); color:#042f2e; font-weight:700; cursor:pointer; }
+    footer { margin-top:2rem; font-size:.75rem; color:#5a6a7d; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">cc4cc.ds4cc.com</div>
+    <h1>Command Center for the Cell</h1>
+    <p>AI-native membership. Card when the rails land. Stack access on day one.</p>
+    <div class="gift">
+      <strong>Welcome gift:</strong> 1 × $UPAFAGOCITO<br />
+      <span style="color:var(--mut)">Full tool stack seat. Superfócito treasury stays gated.</span>
+    </div>
+    <form action="#" method="get" onsubmit="event.preventDefault(); const e=this.email.value.trim(); if(e){ localStorage.setItem('cc4cc_waitlist', e); this.out.hidden=false; this.out.textContent='Locked: '+e+' (local until backend).'; }">
+      <input type="email" name="email" required placeholder="you@domain" autocomplete="email" />
+      <button type="submit">Waitlist</button>
+      <p id="out" name="out" hidden style="width:100%;color:var(--acc)"></p>
+    </form>
+    <footer>cc4cc.ds4cc.com · private build · not an offer of securities · not bank AUM</footer>
+  </main>
+</body>
+</html>
